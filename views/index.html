@@ -1,0 +1,11 @@
+{{ template "layout" .}} {{ define "main"}}
+
+<!-- <div class="text">{"{ .ID }}</div>
+<div class="text">{"{ .Name }}</div>
+<div class="text">{"{ .Stock }}</div>  CARA MENGAKSES DATA YANG STRUCT-->
+
+<!-- MENAMPILKAN DATA SLICE -->
+{{ range .}}
+<!-- pake . karena berbentuk slice jika menggunakan struct maka bisa .ID (sesuaikan dengan nama field nya saja) -->
+<div class="box-with-shadow">{{ .Name }} : {{ .StockStatus }}</div>
+{{ end}} {{ end}}

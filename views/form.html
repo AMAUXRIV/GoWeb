@@ -1,0 +1,26 @@
+{{ template "layout" .}} {{define "main"}}
+
+<div class="box-with-shadow">
+  <form method="post" action="/result">
+    <div class="box-with-shadow">
+      <label>Name :</label>
+      <input type="text" placeholder="Type name here" name="name" required />
+    </div>
+
+    <div class="box-with-shadow">
+      <label>Message :</label>
+      <input
+        type="text"
+        placeholder="Type message here"
+        name="message"
+        required
+      />
+    </div>
+
+    <div class="box-with-shadow">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</div>
+
+{{end}}
